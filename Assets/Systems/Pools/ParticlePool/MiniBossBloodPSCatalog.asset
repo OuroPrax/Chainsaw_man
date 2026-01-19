@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b3e31ed34f9ae47a7cc5ddf3a3b171, type: 3}
+  m_Name: MiniBossBloodPSCatalog
+  m_EditorClassIdentifier: 
+  particlesGOs:
+  - {fileID: 4806315518701389931, guid: 010a8a2552aa5a540a2c57f58d158b89, type: 3}

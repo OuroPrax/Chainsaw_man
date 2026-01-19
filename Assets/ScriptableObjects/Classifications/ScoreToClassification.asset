@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0b84ffca788ab449f046f4e7e06fb4, type: 3}
+  m_Name: ScoreToClassification
+  m_EditorClassIdentifier: 
+  scoresToClassifications:
+  - requiredScore: 100000
+    classification: {fileID: 11400000, guid: d1577e46f2e06344892410cd6780d6f8, type: 2}
+  - requiredScore: 10000
+    classification: {fileID: 11400000, guid: 07d6873643eda2d42a7a7964efa7ef38, type: 2}
+  - requiredScore: 1000
+    classification: {fileID: 11400000, guid: 77548e9001f2e68488af9367787b04cb, type: 2}
+  - requiredScore: 100
+    classification: {fileID: 11400000, guid: b7946515a6bd9a14fb784c8304222feb, type: 2}
+  - requiredScore: 10
+    classification: {fileID: 11400000, guid: 832772f66ed79e54b9ea3b50f253330d, type: 2}
+  lowestClassification: {fileID: 11400000, guid: b98ea44aba0d0dc44ac6289ead9ae196,
+    type: 2}
