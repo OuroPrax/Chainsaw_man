@@ -17,7 +17,7 @@ Implementa un localizador de servicios para el contexto de batalla.
 Tutorial (inglés, nivel intermedio): [YouTube](https://www.youtube.com/watch?v=D4r5EyYQvwY)
 
 ### BattleBootstrapper
-Inicializador temprano de la escena de batalla (`DefaultExecutionOrder -200`).  
+Inicializador temprano de sistemas en la escena de batalla.
 
 **Qué hace**
 - Registra servicios en el `BattleServiceLocator`:
@@ -25,9 +25,6 @@ Inicializador temprano de la escena de batalla (`DefaultExecutionOrder -200`).
   - Pool de sonidos (`ISoundPoolHandler`)
   - Timer, jugador, resultados, puntaje
   - Checker de fin de batalla (`BattleEndCondictionMetChecker`)
-- Configura parámetros globales del usuario:
-  - Sensibilidad (`SharedFloat sensitivity`)
-  - Volumen de audio (`GameAudioType` con valores del `AudioMixer`)
 
 **Por qué es útil**
 - Centraliza inicialización  
