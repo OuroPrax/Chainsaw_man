@@ -1,3 +1,5 @@
+<img width="1590" height="776" alt="image" src="https://github.com/user-attachments/assets/c4669fe5-38a7-44a3-a9fc-e79fddf0e2d9" />
+
 Un fanmade de Chainsaw Man enfocado en la acción pura. En este hack and slash encarnás a Denji, enfrentándote al Demonio Zombie, el primer gran enemigo que aparece en el manga.
 El juego pone el foco en el combate cuerpo a cuerpo, con golpes rápidos, una sensación agresiva y una habilidad especial que desata todo el poder de la motosierra. Cada enfrentamiento busca transmitir la brutalidad, el caos y la desesperación que definen el mundo de Chainsaw Man.
 
