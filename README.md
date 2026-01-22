@@ -5,8 +5,11 @@ El juego pone el foco en el combate cuerpo a cuerpo, con golpes rápidos, una se
 
 ## Controles:
 W, A, S, D – Movimiento
+
 Click izquierdo – Golpear
+
 Espacio – Activar habilidad especial
+
 T – Alternar cámara libre / fijada al Demonio Zombie
 
 ---
