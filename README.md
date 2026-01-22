@@ -8,9 +8,16 @@ Espacio – Activar habilidad especial
 T – Alternar cámara libre / fijada al Demonio Zombie
 
 ---
+## Links:
+[Juego en Itchio](https://ouroprax.itch.io/chainsaw-man)
+
+[Primer video de YouTube](https://www.youtube.com/watch?v=2pz2wLAYv2I)
+
+[Segundo video de YouTube](https://www.youtube.com/watch?v=Iq5e-wK-p8I)
+
 ---
 
-## Sistemas
+## Explicación de algunos scripts o sistemas
 
 ### BattleServiceLocator
 Implementa un localizador de servicios para el contexto de batalla.  
