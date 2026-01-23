@@ -15,18 +15,29 @@ public class DashPower : MonoBehaviour
     [SerializeField] float rateGainedPerSecond = .1f;
     [SerializeField] SharedFloat powerRate;
     Coroutine dashing, recovering;
-
-    private void Start()
+    private void Awake()
     {
         powerRate.Value = 0f;
-        if(!IsFull && !IsRecovering)
-           recovering = StartCoroutine(Recover());
+    }
+    private void OnEnable()
+    {
+        if (!IsFull && !IsRecovering)
+            recovering = StartCoroutine(Recover());
+    }
+    private void OnDisable()
+    {
+        if(recovering != null )
+        {
+            StopCoroutine(recovering);
+            recovering = null;
+        }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && IsFull && !IsDashing)
         {
+            Debug.Log("Dash");
             dashing = StartCoroutine(Dash());
         }
     }
