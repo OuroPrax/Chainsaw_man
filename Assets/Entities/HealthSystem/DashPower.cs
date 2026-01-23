@@ -14,10 +14,12 @@ public class DashPower : MonoBehaviour
     [SerializeField] float duration = .5f;
     [SerializeField] float rateGainedPerSecond = .1f;
     [SerializeField] SharedFloat powerRate;
+    PlayerMovementController playerMovementController;
     Coroutine dashing, recovering;
     private void Awake()
     {
         powerRate.Value = 0f;
+        playerMovementController = GetComponent<PlayerMovementController>();
     }
     private void OnEnable()
     {
@@ -35,7 +37,7 @@ public class DashPower : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && IsFull && !IsDashing)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && IsFull && !IsDashing && playerMovementController.CanMove)
         {
             Debug.Log("Dash");
             dashing = StartCoroutine(Dash());

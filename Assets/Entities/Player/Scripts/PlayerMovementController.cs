@@ -48,7 +48,7 @@ public class PlayerMovementController : MonoBehaviour
     private const float minSnapThreshold = 0.01f;
 
     // Permite el movimiento del jugador
-    bool _canMove = true;
+    public bool CanMove { get; private set; } = true;
 
     private void Awake()
     {
@@ -90,7 +90,7 @@ public class PlayerMovementController : MonoBehaviour
     }
     private void HandleMovement()
     {
-        if (!_canMove)
+        if (!CanMove)
         {
             transform.rotation = new Quaternion(0, transform.rotation.y, 0, transform.rotation.w);
             //RotateAndTilt(new Vector3(0, transform.forward.y,0));
@@ -130,6 +130,8 @@ public class PlayerMovementController : MonoBehaviour
     }
     void RotateAndTilt(Vector3 moveDir)
     {
+        if (!CanMove) return;
+        
         // --- Yaw (rotación horizontal) ---
         float targetYaw = Mathf.Atan2(moveDir.x, moveDir.z) * Mathf.Rad2Deg;
         float smoothedYaw = Mathf.SmoothDampAngle(
@@ -177,6 +179,6 @@ public class PlayerMovementController : MonoBehaviour
 
 
     #region CanMove Methods
-    public void ChangeCanMove(bool value) => _canMove = value;
+    public void ChangeCanMove(bool value) => CanMove = value;
     #endregion
 }
